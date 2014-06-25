@@ -15,7 +15,7 @@ module RedmineLatexMathjax
   });
           MathJax.Hub.Typeset();
           </script>" +
-            javascript_include_tag('https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML')
+            javascript_include_tag('https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=onload')
       end
     end
   end
