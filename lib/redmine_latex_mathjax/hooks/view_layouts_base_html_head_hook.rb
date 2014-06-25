@@ -13,9 +13,9 @@ module RedmineLatexMathjax
       processEscapes: true
     },
     'HTML-CSS': { availableFonts: ['TeX'] }
-    }
-    </script>" 
-        + javascript_include_tag('https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=onload')
+    };
+          </script>" +
+            javascript_include_tag('https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=onload')
       end
     end
   end
