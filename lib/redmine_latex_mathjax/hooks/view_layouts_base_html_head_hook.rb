@@ -15,7 +15,10 @@ module RedmineLatexMathjax
     'HTML-CSS': { availableFonts: ['TeX'] }
     };
           </script>" +
-            javascript_include_tag('https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=onload')
+            javascript_include_tag('https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=onload') +
+         "<script type=\"text/javascript\">
+          $('#preview').on('submitPreview',function () {MathJax.Hub.Queue(['Typeset',MathJax.Hub,'preview']);});
+         </script>"
       end
     end
   end
