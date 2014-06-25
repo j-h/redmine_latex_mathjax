@@ -16,6 +16,13 @@ module RedmineLatexMathjax
     }
     </script>" 
         + javascript_include_tag('https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=onload')
+        + "
+    <script type=\"text/javascript\">
+      $(document).ajaxComplete(function(event,request,settings) {
+         $('#preview').append( "<li>Request Complete.</li>" );
+         MathJax.Hub.Queue(["Typeset",MathJax.Hub,"preview"]);
+});
+    </script>"
       end
     end
   end
